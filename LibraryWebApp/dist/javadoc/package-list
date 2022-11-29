@@ -1,0 +1,11 @@
+za.co.mecer.controller
+za.co.mecer.dao
+za.co.mecer.dao.impl
+za.co.mecer.dbconnection
+za.co.mecer.exceptions
+za.co.mecer.model
+za.co.mecer.modelImpl
+za.co.mecer.process
+za.co.mecer.res
+za.co.mecer.serviceimpl
+za.co.mecer.services

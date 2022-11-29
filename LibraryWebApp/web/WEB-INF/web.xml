@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>LibraryController</servlet-name>
+        <servlet-class>za.co.mecer.controller.LibraryController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LibraryController</servlet-name>
+        <url-pattern>/control</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>RegisterClient</servlet-name>
+        <jsp-file>/client_reg.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterClient</servlet-name>
+        <url-pattern>/registerClient</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>RegisteredClient</servlet-name>
+        <jsp-file>/registered_client.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisteredClient</servlet-name>
+        <url-pattern>/registeredClient</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>BookLoan</servlet-name>
+        <jsp-file>/book_loan.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookLoan</servlet-name>
+        <url-pattern>/bookLoan</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>BookLibrary</servlet-name>
+        <jsp-file>/books_library.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookLibrary</servlet-name>
+        <url-pattern>/bookLibrary</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SignIn</servlet-name>
+        <jsp-file>/sign_in.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignIn</servlet-name>
+        <url-pattern>/signIn</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SignUp</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUp</servlet-name>
+        <url-pattern>/signUp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddBook</servlet-name>
+        <jsp-file>/add_book.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddBook</servlet-name>
+        <url-pattern>/addBook</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ClientsList</servlet-name>
+        <jsp-file>/clients_list.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClientsList</servlet-name>
+        <url-pattern>/clients</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>BookSlideShow</servlet-name>
+        <jsp-file>/books_slide.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookSlideShow</servlet-name>
+        <url-pattern>/slideshow</url-pattern>
+    </servlet-mapping>
+    
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+     
+        <welcome-file>books_slide.jsp</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
